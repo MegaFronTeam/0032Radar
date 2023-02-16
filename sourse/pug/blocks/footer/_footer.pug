@@ -1,9 +1,27 @@
 mixin footer()
 	+b.FOOTER.footer.section
 		.container
-			.row
-				.col
-					
-				.col Footer
-				.col
-				.col-auto
+			+e.row.row
+				.col-sm-4.col-lg-3
+					+e.logo(href='/'): +img('img/svg/logo2.svg')
+				.col-6.col-sm
+					ul 
+						li: a(href="#") Стартапы 
+						li: a(href="#") Инвесторы 
+						li: a(href="#") Меры поддержки
+						li: a(href="#") Эксперты
+						li: a(href="#") Мероприятия
+						li: a(href="#") Новости
+						li: a(href="#") Сделки
+				.col-6.col-sm-4.col-lg-2
+					+e.UL.secondary-list
+						li: a(href="#") Вакансии 
+						li: a(href="#") Пилоты 
+						li: a(href="#") Мои подброрки
+			+e.inner-row.row
+				.col-sm
+					p © 2022. Все права защищены
+				.col-sm-auto
+					a(href="#") Политика конфиденциальности
+				.col-sm-auto
+					a(href="#") Условия пользовательского соглашения

@@ -2,9 +2,16 @@ mixin headerBlock()
 	// start headerBlock
 	+b.headerBlock.section#headerBlock&attributes(attributes)
 		.container
-			+b.section-title.text-center
-				h2 headerBlock ds dfsdfdsfsd
-
-			.row
-						
+			+e.row.row
+				.col-lg-6.col-xl-5
+					h1 Уделяйте время бизнесу, а&nbsp;не&nbsp;поиску инвестиций
+					p Единое место инвесторов, мер поддержки, мероприятий и&nbsp;других возможностей роста для вашего стартапа
+					+e.inner-row.row
+						.col-sm-auto
+							+e.btn.btn.btn-light(href='#') Присоединиться
+						.col-sm-auto
+							+e.btn.btn.btn-outline-light(href='#') Попробовать Demo
+				+e.col.col
+					img(src='img/headerBlock-img-1.png').img
+		+e.circle
 	// end headerBlock
