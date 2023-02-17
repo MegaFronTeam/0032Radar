@@ -2,12 +2,16 @@ mixin sForm()
 	// start sForm
 	+b.SECTION.sForm.section#sForm&attributes(attributes)
 		.container
-			+b.section-title.text-center
-				h2 sForm
-				
-			+e.row.row
-			+form-wrap
-				+input("",'')
-				+input("",'')
-				+input("",'')
+			+e.wrap
+				+e.row.row
+					.col
+						+b.section-title
+							h2 Единое место всех возможностей для роста вашего стартапа
+							p Находите релевантные для вас возможности, узнавайте детальную информацию по&nbsp;ним и&nbsp;откликайтесь внутри единой платформы
+					.col-lg-4
+						+form-wrap
+							+input("Ваше имя",'text')
+							+input("Ваше e-mail",'email')
+							+e.btn.btn.btn-primary(type='submit') Присоединиться
+							+policy
 	// end sForm

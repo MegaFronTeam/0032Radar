@@ -1,0 +1,20 @@
+mixin sCompany(data)
+	// start sCompany
+	+b.SECTION.sCompany.section#sCompany&attributes(attributes)
+		.container
+			+b.section-title.text-center
+				h2 10 000+ компаний
+				p Уже доверяют нам
+			+e.row.row
+				-for(let i = 1; i <= 5; i++)
+					.col-6.col-sm-auto
+						+img(`img/sCompany-img-${i}.png`)
+			+e.row.row
+				-for(let i = 1; i <= 5; i++)
+					.col-6.col-sm-auto
+						+img(`img/sCompany-img-${i}.png`)
+				.col-6.col-sm-auto
+					+img(`img/sCompany-img-1.png`)
+				.col-6.col-sm-auto
+					+img(`img/sCompany-img-2.png`)
+	// end sCompany

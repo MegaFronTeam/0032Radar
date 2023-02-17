@@ -1,0 +1,20 @@
+mixin sAdvantages(data)
+	// start sAdvantages
+	+b.SECTION.sAdvantages.section#sAdvantages&attributes(attributes)
+		.container
+			+e.row.row
+				mixin item(title, text)
+					+e.item
+						h2!= title
+						p!= text
+				.col-md-auto
+					+e.wrap
+						+item('500+', 'Мер поддержки')
+						+item('200+', 'Инвесторов и фондов')
+				.col.d-none.d-md-block
+					+img('img/sAdvantages-img-1.png')
+				.col-md-auto
+					+e.wrap
+						+item('100+', 'Мероприятий еженедельно')
+						+item('30+', 'Корпораций ищут технологии и пилоты')
+	// end sAdvantages

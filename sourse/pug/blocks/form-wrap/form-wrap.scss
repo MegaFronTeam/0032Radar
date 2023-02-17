@@ -1,20 +1,35 @@
 .form-wrap{
+	--bs-gutter-y: #{rem(16)};
+	margin-top: calc(var(--bs-gutter-y) * -1);
  	&__input-wrap{
-			// @extend .form-group;
-			
-		}
-		&__input{
-			// @extend .form-control;
+		// @extend .form-group;
+		margin-top: var(--bs-gutter-y);
+	}
+	&__input{
+		// @extend .form-control;
 		//  outline: 0 !important;
-		 resize: none;
+		resize: none;
  	}
  	&__btn{
+		--bs-btn-padding-y: #{rem(21)};
+		--bs-btn-color: #fff;
+		--bs-btn-hover-color: #fff;
+		--bs-btn-active-color: #fff;
+
+		margin-top: var(--bs-gutter-y);
  		cursor: pointer;
+		width: 100%;
+		margin-top: rem(24);
+		margin-bottom: rem(31);
  	}
  	label{
  		width: 100%;
  		display: block;
  	}
+	&__policy {
+		font-size: rem(11);
+		color: $gray-600;
+	}
 }
 
 
