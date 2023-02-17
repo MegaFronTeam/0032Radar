@@ -40,21 +40,22 @@
 			filter: blur(135.927px);
 		}
 		.monitor {
-			display: block;
-			margin-left: auto;
-			margin-right: auto;
-			margin-top: auto;
-			width: 73%;
+			// display: block;
+			// margin-left: auto;
+			// margin-right: auto;
+			// margin-top: auto;
+			// width: 73%;
+			width: 100%;
 			@include media-breakpoint-up(xl) {
-				z-index: 3;
-				position: absolute;
-				left: 50%;
-				bottom: 0;
-				transform: translateX(-50%);
-				height: rem(514);
+				// z-index: 3;
+				// position: absolute;
+				// left: 50%;
+				// bottom: 0;
+				// transform: translateX(-50%);
+				// height: rem(514);
+				// width: rem(1017);
 				object-fit: cover;
 				object-position: top;
-				width: rem(1017);
 			}
 		}
 		.img-1, .img-2 {
@@ -74,12 +75,35 @@
     	left: -812px;
 		}
 	}
-	&__inner-wrap {
+	&__img-wrap {
+		position: relative;
 		overflow: hidden;
-		// position: absolute;
-		// left: 50%;
-		// bottom: 0;
-		// overflow: hidden;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: auto;
+		width: 73%;
+		&:after {
+			content: '';
+			position: absolute;
+			display: block;
+			width: 100%;
+			height: 100%;
+			left: 0;
+			top: 0;
+			background-image: linear-gradient(1deg,#51B2FF -2.01%,hsla(0,0%,85%,0) 90.58%);
+		}
+		@include media-breakpoint-up(xl) {
+			z-index: 3;
+			position: absolute;
+			left: 50%;
+			bottom: 0;
+			transform: translateX(-50%);
+			height: rem(514);
+			// object-fit: cover;
+			// object-position: top;
+			width: rem(1017);
+		}
 	}
 	.section-title {
 		position: relative;
