@@ -1,8 +1,8 @@
 {
 	"nav":[
-		{ "name":"Стартапам", "url":"#"},
-		{	"name":"Инвесторам", "url":"#"},
-		{"name":"Корпорациям", "url":"#"}
+		{ "name":"Стартапам", "url":"https://radar.leader-id.ru/"},
+		{	"name":"Инвесторам", "url":"https://radar.leader-id.ru/"},
+		{"name":"Корпорациям", "url":"https://radar.leader-id.ru/"}
 	],
 	"social":[
 		"fb","instagram","telegram"
