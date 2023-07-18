@@ -70,6 +70,37 @@
 		line-height: 1.6em;
 		max-width: rem(240);
 	}
+
+	.tabs__caption{
+		display: flex;
+		@include roww(24px, m);
+		padding: 16px;
+		border-radius: 150px;
+		background: var(--inputs-bg-input, #F0F5FA);
+		margin-bottom: 80px;
+	}
+
+	.tabs__btn{
+		@extend .btn;
+		background-color: #fff;
+		border-color: fff;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 56px;
+		border-radius: 100px;
+		flex-grow: 1;
+		&:active{
+			border-color: $primary;
+		}
+		&.active,
+		&.hover{
+			color: #fff;
+			background-color: $primary;
+			border-color: $primary;
+		}
+	}
+
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}
 	@include media-breakpoint-up(md) {}

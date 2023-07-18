@@ -12,6 +12,9 @@ include ../blocks/sInfo/_sInfo.pug
 include ../blocks/sExpirience/_sExpirience.pug
 include ../blocks/sCompany/_sCompany.pug
 include ../blocks/footer/_footer.pug
+include ../blocks/sJoin/_sJoin.pug
+include ../blocks/sLogos/_sLogos.pug
+include ../blocks/sRadar/_sRadar.pug
 
 block variables
 	- let  mainPage= 'main-page' 
@@ -29,9 +32,11 @@ block pagecontent
 		//- +topLine
 	main
 		+headerBlock 
+		//- +sRadar
 		+sAdvantages
 		+sInfo
-		+sExpirience
+		+sLogos
+		+sJoin
 		//- +sCompany
 		//- +sForm
 	+footer()

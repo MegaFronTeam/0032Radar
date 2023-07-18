@@ -9,12 +9,25 @@ mixin sAdvantages(data)
 						p!= text
 				.col-md-auto
 					+e.wrap
-						+item('500+', 'Мер поддержки')
-						+item('200+', 'Инвесторов и фондов')
+						+item('350+', 'Мер поддержки')
+						+item('100+', 'Инвесторов и фондов')
 				.col.d-none.d-md-block
-					+img('img/sAdvantages-img-1.png')
+					+e.center-wrap
+						mixin abs-item(i,t)
+							+e.abs-item
+								+e.icon-wrap
+									img(src=`img/radar-${i}.svg`, alt="")
+								+e.title= t
+						+abs-item("1",'Компании')
+						+abs-item("2",'Инвесторы')
+						+abs-item("3",'Сделки')
+						+abs-item("4",'Эксперты')
+						+abs-item("5",'Меры поддержки')
+						+abs-item("6",'Новости')
+						+abs-item("7",'Мероприятия')
+						+img('img/sAdvantages-img-1-new.png').radar
 				.col-md-auto
 					+e.wrap
-						+item('100+', 'Мероприятий еженедельно')
-						+item('30+', 'Корпораций ищут технологии и пилоты')
+						+item('150+', 'Мероприятий еженедельно')
+						+item('20+', 'Корпораций ищут технологии и пилоты')
 	// end sAdvantages

@@ -4,7 +4,7 @@ mixin footer()
 			+e.row.row
 				.col-sm-4.col-lg-3
 					+e.logo(href='/'): +img('img/svg/logo2.svg')
-				.col-6.col-sm
+				.col-6.col-sm-auto.col-xl-3
 					ul 
 						li: a(href='https://radar.leader-id.ru/' target='_blank') Стартапы 
 						li: a(href='https://radar.leader-id.ru/' target='_blank') Инвесторы 
@@ -13,15 +13,15 @@ mixin footer()
 						li: a(href='https://radar.leader-id.ru/' target='_blank') Мероприятия
 						li: a(href='https://radar.leader-id.ru/' target='_blank') Новости
 						li: a(href='https://radar.leader-id.ru/' target='_blank') Сделки
-				.col-6.col-sm-4.col-lg-2
+				.col-6.col-sm-auto
 					+e.UL.secondary-list
 						li: a(href='https://radar.leader-id.ru/' target='_blank') Вакансии 
 						li: a(href='https://radar.leader-id.ru/' target='_blank') Пилоты 
 						li: a(href='https://radar.leader-id.ru/' target='_blank') Мои подброрки
 			+e.inner-row.row
 				.col-sm
-					p © 2022. Все права защищены
+					p ©  
+						span.footer__year 2023
+						| . Все права защищены 
 				.col-sm-auto
-					a(href="#") Политика конфиденциальности
-				.col-sm-auto
-					a(href="#") Условия пользовательского соглашения
+					a(href="https://cloud.nti.work/index.php/s/KLxQqSJow3y7c42"  target="_blank") Политика конфиденциальности и условия пользовательского соглашения
