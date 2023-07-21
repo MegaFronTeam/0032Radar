@@ -5,19 +5,30 @@ mixin footer()
 				.col-sm-4.col-lg-3
 					+e.logo(href='/'): +img('img/svg/logo2.svg')
 				.col-6.col-sm-auto.col-xl-3
-					ul 
-						li: a(href='https://radar.leader-id.ru/' target='_blank') Стартапы 
-						li: a(href='https://radar.leader-id.ru/' target='_blank') Инвесторы 
-						li: a(href='https://radar.leader-id.ru/' target='_blank') Меры поддержки
-						li: a(href='https://radar.leader-id.ru/' target='_blank') Эксперты
-						li: a(href='https://radar.leader-id.ru/' target='_blank') Мероприятия
-						li: a(href='https://radar.leader-id.ru/' target='_blank') Новости
-						li: a(href='https://radar.leader-id.ru/' target='_blank') Сделки
+					ul
+						li
+							a(href='https://radar.leader-id.ru/companies' )  Компании
+						li
+							a(href='https://radar.leader-id.ru/measure' )  Меры поддержки
+						li
+							a(href='https://radar.leader-id.ru/experts' )  Эксперты
+						li
+							a(href='https://radar.leader-id.ru/event' )  Мероприятия
+						li
+							a(href='https://radar.leader-id.ru/news' )  Новости
+						li
+							a(href='https://radar.leader-id.ru/investor' )  Инвесторы
+						li
+							a(href='https://radar.leader-id.ru/deal' )  Сделки
+
 				.col-6.col-sm-auto
 					+e.UL.secondary-list
-						li: a(href='https://radar.leader-id.ru/' target='_blank') Вакансии 
-						li: a(href='https://radar.leader-id.ru/' target='_blank') Пилоты 
-						li: a(href='https://radar.leader-id.ru/' target='_blank') Мои подброрки
+						li
+							a(href='https://pt.2035.university/vacancy'  rel='noreferrer' target='_blank')  Вакансии
+						li
+							a(href='https://radar.leader-id.ru/pilot' draggable='false')  Пилоты
+						li
+							a(href='https://radar.leader-id.ru/compilation' draggable='false') Мои подборки
 			+e.inner-row.row
 				.col-sm
 					p ©  
