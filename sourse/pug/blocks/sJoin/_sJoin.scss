@@ -17,10 +17,13 @@
 			max-width: 500px;
 		}
 	}
-	&__col{
-		max-width: calc(#{rem(335)} + var(--bs-gutter-x));
+	@include media-breakpoint-up(lg) {
+
+		&__col{
+			max-width: calc(#{rem(335)} + var(--bs-gutter-x));
+		}
 	}
-	&__item{
+		&__item{
 
 	}
 	&__inner{
@@ -35,7 +38,11 @@
 			opacity: 0.5;
 			background: linear-gradient(135deg, #0057FF 1.41%, #F0F5FA 18.00%, #F0F5FA 84.34%, #0057FF 100%);
 		}
-		padding: rem(80);
+		@include media-breakpoint-up(md) {
+
+			padding: rem(80);
+		}
+		padding: rem(30) rem(15);
 	}
 	&__btn{
 		color: #fff !important;
