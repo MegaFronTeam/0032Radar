@@ -21,17 +21,17 @@ mixin top-nav()
 	// start top-nav
 	+b.top-nav.block-with-lazy
 		.container
-			+e.row.row
-				.col.col-lg-auto
-					+e.logo(href='https://radar.leader-id.ru/' target='_blank'): +img('img/svg/logo.svg')
-				.col-auto.col-lg
-					.menu-mobile.menu-mobile--js
-						.menu-mobile__inner
-							+menu-toggle()
-							+mnu()
-							+e.btn.btn.btn-outline-light.d-lg-none(href='https://radar.leader-id.ru/' target='_blank') Войти
-				.col-auto.d-none.d-lg-block
-					+e.btn.btn.btn-outline-light(href='https://radar.leader-id.ru/' target='_blank') Войти
-				.col-auto.d-lg-none
-					+menu-toggle()
+			+e.logo(href='https://radar.leader-id.ru/' target='_blank'): +img('img/svg/logo.svg')
+			//- +e.row.row
+			//- 	.col.col-lg-auto
+				//- .col-auto.col-lg
+				//- 	.menu-mobile.menu-mobile--js
+				//- 		.menu-mobile__inner
+				//- 			+menu-toggle()
+				//- 			+mnu()
+				//- 			+e.btn.btn.btn-outline-light.d-lg-none(href='https://radar.leader-id.ru/' target='_blank') Войти
+				//- .col-auto.d-none.d-lg-block
+				//- 	+e.btn.btn.btn-outline-light(href='https://radar.leader-id.ru/' target='_blank') Войти
+				//- .col-auto.d-lg-none
+				//- 	+menu-toggle()
 	// end top-nav
